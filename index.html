@@ -123,8 +123,9 @@
         </div>
     </div>
     <script>
-        let selectedChoice = "";
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwo3bqj65mMucchPk7lkLrGiMOg3q6xkW6c2vSjiQrCQGCX35u2obHnZ0tmdE0SnlWcDw/exec'; 
+        const p = document.getElementById('parentName').value;
+            const s = document.getElementById('studentName').value;
+            if(!p || !s || !selectedChoice) return alert("Vui lòng điền đủ thông tin!");
 
         function openLetter() {
             document.getElementById('envelope-view').style.display = 'none';
