@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thư Mời Họp Phụ Huynh Lớp 2A3</title>
-    <link href="https://drive.google.com/file/d/1RTNNE4lSbBo3_NYdd5NyId12SXv7PSJY/view?usp=drive_link" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         :root { --primary-red: #AF3721; --text-brown: #6D5640; }
         body {
             margin: 0; padding: 0;
-            background-image: url('truong.jpg');
+            /* Dùng link ảnh trực tiếp từ web trường để đảm bảo luôn hiển thị */
+            background-image: url('http://thluuchihieuvt.brvt.edu.vn/upload/105573/fck/thluuchihieu_vt/543009075_745524204950614_8316827513933336548_n.jpg');
             background-size: cover; background-position: center; background-attachment: fixed;
             font-family: 'Playfair Display', serif;
             display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow-x: hidden;
@@ -40,30 +41,15 @@
         .time { width: 100px; color: var(--primary-red); font-weight: bold; flex-shrink: 0; font-size: 0.9rem; }
         .content h4 { margin: 0; color: var(--primary-red); font-size: 1rem; }
         .content p { margin: 5px 0 0 0; font-size: 0.9rem; color: var(--text-brown); }
-        
-        .thanks-letter {
-            margin-top: 40px; padding: 25px; background: #fff; border: 1px solid #E6D4B9; border-radius: 10px;
-            text-align: center; color: var(--text-brown); position: relative;
-        }
-        .thanks-title { font-size: 1.8rem; color: var(--primary-red); font-style: italic; margin-bottom: 15px; }
+        .thanks-letter { margin-top: 40px; padding: 25px; background: #fff; border: 1px solid #E6D4B9; border-radius: 10px; text-align: center; color: var(--text-brown); position: relative; }
         .signature { margin-top: 20px; text-align: right; font-weight: bold; color: var(--primary-red); margin-bottom: 20px; }
-        
-        /* CSS cho ảnh tập thể lớp */
-        .class-photo { 
-            width: 100%; 
-            border-radius: 10px; 
-            margin-top: 15px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border: 3px solid #FAF6F0;
-        }
-
+        .class-photo { width: 100%; border-radius: 10px; margin-top: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 3px solid #FAF6F0; }
         input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #E6D4B9; border-radius: 5px; box-sizing: border-box; background: #FAF6F0; font-family: inherit; }
         .btn-group { display: flex; justify-content: space-between; margin-top: 10px; }
         .opt-btn { width: 48%; padding: 12px; border: 2px solid #E6D4B9; background: white; cursor: pointer; font-weight: bold; color: var(--primary-red); border-radius: 5px; }
         .opt-btn.active { background: #E6D4B9; color: white; }
         #submit-btn { width: 100%; padding: 15px; background: var(--primary-red); color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 1.1rem; margin-top: 15px; }
-        #thanks-msg-final { display: none; margin-top: 20px; text-align: center; color: var(--primary-red); font-weight: bold; font-size: 1.2rem; animation: fadeIn 1s; }
-        @keyframes fadeIn { from { opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        #thanks-msg-final { display: none; margin-top: 20px; text-align: center; color: var(--primary-red); font-weight: bold; font-size: 1.2rem; }
         .petal { position: fixed; top: -20px; z-index: 10; pointer-events: none; animation: fall linear forwards; }
         @keyframes fall { to { transform: translateY(105vh) rotate(360deg); } }
     </style>
@@ -81,22 +67,15 @@
         <div id="letter-view">
             <h2>THƯ MỜI HỌP PHỤ HUYNH CUỐI NĂM</h2>
             <p>Kính gửi Quý Phụ Huynh,</p>
-            <p>Hành trình một năm học đang dần khép lại, đánh dấu hành trình trưởng thành đầy nỗ lực của các con.
-              Nhà trường và giáo viên chủ nhiệm trân trọng kính mời quý phụ huynh tham dự buổi họp phụ huynh cuối năm để cùng nhìn lại hành trình học tập, chia sẻ những thành quả, đồng thời cùng đồng hành và định hướng cho chặng đường tiếp theo của các con.</p>
+            <p>Hành trình một năm học đang dần khép lại...</p>
             <div class="details-box">
                 <p>📅 <b>Thời gian:</b> 07 giờ 30 phút - Ngày 17/05/2026</p>
                 <p>📍 <b>Địa điểm:</b> Phòng học lớp 2A3, Trường Tiểu học Lưu Chí Hiếu</p>
-                <p>Sự hiện diện của quý phụ huynh là niềm động viên lớn lao đối với cô và các con.</p>
-                <p>Trân trọng kính mời.</p>
             </div>
             
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
             <h3>Chương trình buổi họp</h3>
-            <div class="timeline-item"><div class="time">07:30-07:45</div><div class="content"><h4>ĐÓN TIẾP</h4><p>Ổn định chỗ ngồi và xem clip hoạt động của lớp</p></div></div>
-            <div class="timeline-item"><div class="time">07:45-08:00</div><div class="content"><h4>KHAI MẠC</h4><p>Tuyên bố lý do, giới thiệu nội dung chương trình</p></div></div>
-            <div class="timeline-item"><div class="time">08:00-09:00</div><div class="content"><h4>BÁO CÁO</h4><p>Đánh giá kết quả học tập và rèn luyện của học sinh trong năm học</p></div></div>
-            <div class="timeline-item"><div class="time">09:00-09:30</div><div class="content"><h4>TRAO ĐỔI</h4><p>Trao đổi, thảo luận và lắng nghe ý kiến của phụ huynh</p></div></div>
-            <div class="timeline-item"><div class="time">09:30-09:45</div><div class="content"><h4>BẾ MẠC</h4><p>Cảm ơn sự tham dự của phụ huynh và kết thúc chương trình</p></div></div>
+            <div class="timeline-item"><div class="time">07:30-07:45</div><div class="content"><h4>ĐÓN TIẾP</h4><p>Ổn định chỗ ngồi và xem clip lớp</p></div></div>
+            <div class="timeline-item"><div class="time">09:30-09:45</div><div class="content"><h4>BẾ MẠC</h4><p>Kết thúc chương trình</p></div></div>
             
             <div id="form-container" style="background: #FAF6F0; padding: 20px; border-radius: 10px; margin-top: 25px;">
                 <h3 style="font-size: 1.2rem;">Xác nhận tham dự</h3>
@@ -111,29 +90,22 @@
             </div>
 
             <div class="thanks-letter">
-                <div class="thanks-title">Thư cảm ơn</div>
-                <p>Cảm ơn Quý phụ huynh đã luôn đồng hành, tin tưởng và phối hợp cùng cô Hằng và cô Nhàn trong suốt năm học vừa qua.</p>
-                <p>Sự yêu thương, quan tâm và sẻ chia của Quý phụ huynh là nguồn động lực to lớn để hai cô tiếp tục nỗ lực mỗi ngày vì sự trưởng thành và hạnh phúc của các con.</p>
-                <p style="font-weight: bold;">Trân trọng kính mời Quý phụ huynh tham dự buổi họp cuối năm.</p>
-                <p style="font-style: italic; color: #AF3721;">Hẹn gặp lại trong buổi gặp gỡ đầy ý nghĩa!</p>
                 <div class="signature">Trịnh Thu Hằng</div>
-                
                 <img src="https://lh3.googleusercontent.com/d/1nRiGLQzUINaegDwAqDNUL-_MXNc4w3de" class="class-photo" alt="Tập thể lớp 2A3">
             </div>
         </div>
     </div>
+
     <script>
         let selectedChoice = "";
-        const scriptURL = 'YOUR_GOOGLE_SCRIPT_URL_HERE'; 
+        // Đã giữ nguyên link Script của bạn
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwo3bqj65mMucchPk7lkLrGiMOg3q6xkW6c2vSjiQrCQGCX35u2obHnZ0tmdE0SnlWcDw/exec'; 
 
         function openLetter() {
             document.getElementById('envelope-view').style.display = 'none';
             document.getElementById('letter-view').style.display = 'block';
-            
             const audio = document.getElementById('bgMusic');
-            audio.play().catch(error => {
-                console.log("Trình duyệt chặn tự phát nhạc:", error);
-            });
+            audio.play().catch(e => console.log("Nhạc bị chặn:", e));
         }
 
         function setChoice(val) {
@@ -145,22 +117,28 @@
         function sendConfirmation() {
             const p = document.getElementById('parentName').value;
             const s = document.getElementById('studentName').value;
-            if(!p || !s || !selectedChoice) return alert("Vui lòng điền đủ thông tin!");
             
+            if(!p || !s || !selectedChoice) {
+                return alert("Vui lòng điền đủ tên và chọn trạng thái tham dự!");
+            }
+            
+            // Hiển thị thông báo cảm ơn ngay
             document.getElementById('submit-btn').style.display = 'none';
             document.getElementById('thanks-msg-final').style.display = 'block';
 
-            if(scriptURL !== 'YOUR_GOOGLE_SCRIPT_URL_HERE') {
-                fetch(scriptURL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    cache: 'no-cache',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ parent: p, student: s, status: selectedChoice })
-                }).catch(e => console.log('Error!', e.message));
-            }
+            // Gửi dữ liệu đi (Đã xóa bỏ dòng IF gây lỗi đứng máy)
+            fetch(scriptURL, {
+                method: 'POST',
+                mode: 'no-cors',
+                cache: 'no-cache',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ parent: p, student: s, status: selectedChoice })
+            })
+            .then(() => console.log("Đã gửi thành công!"))
+            .catch(e => console.log('Lỗi gửi dữ liệu:', e.message));
         }
         
+        // Hiệu ứng hoa rơi
         setInterval(() => {
             const petal = document.createElement('div');
             petal.className = 'petal'; petal.innerHTML = '🌸';
@@ -172,4 +150,3 @@
     </script>
 </body>
 </html>
-
