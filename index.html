@@ -124,7 +124,7 @@
     </div>
     <script>
         let selectedChoice = "";
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxcdjMSXxVxyr9LaKT7UdbdaYbtqsAkAqJssutXao7s35FBDMaw12H0AbNerQEGp2RU2Q/exec'; 
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwo3bqj65mMucchPk7lkLrGiMOg3q6xkW6c2vSjiQrCQGCX35u2obHnZ0tmdE0SnlWcDw/exec'; 
 
         function openLetter() {
             document.getElementById('envelope-view').style.display = 'none';
@@ -150,7 +150,7 @@
             document.getElementById('submit-btn').style.display = 'none';
             document.getElementById('thanks-msg-final').style.display = 'block';
 
-            if(scriptURL !== 'YOUR_GOOGLE_SCRIPT_URL_HERE') {
+            if(scriptURL !== 'https://script.google.com/macros/s/AKfycbwo3bqj65mMucchPk7lkLrGiMOg3q6xkW6c2vSjiQrCQGCX35u2obHnZ0tmdE0SnlWcDw/exec') {
                 fetch(scriptURL, {
                     method: 'POST',
                     mode: 'no-cors',
